@@ -4,6 +4,8 @@ This project uses the COVID-19 Cases.csv as the source dataset to create dashboa
 
 ![GitHub Logo]( ./tableau viz/images/Overview.png)
 
+![GitHub Logo](tableau viz/images/Overview.png)
+
 ![GitHub Logo]( ./tableau viz/images/Cases Map View.png)
 
 ![GitHub Logo]( ./tableau viz/images/Cases vs Country.png)
