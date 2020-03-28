@@ -47,6 +47,26 @@ Below lists some of the visualisations.
 
 ![country-covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Country%20Specific%20COVID.png)
 
+# Top & Bottom COVID countries
+
+![country-covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Top%20%26%20Bottom%20COVID%20countries.png)
+
+# Top 5 COVID countries
+
+![country-covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Top%205%20COVID%20countries.png)
+
+# Top & Bottom COVID states
+
+![country-covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Top%20%26%20Bottom%20COVID%20States.png)
+
+# COVID Story 1
+
+![story](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/COVID%20Story%201%20.png)
+
+
+
+
+
 
 
 
