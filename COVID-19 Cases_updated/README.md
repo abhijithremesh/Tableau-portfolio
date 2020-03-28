@@ -59,7 +59,7 @@ Below lists some of the visualisations.
 
 ![country-covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Top%20%26%20Bottom%20COVID%20States.png)
 
-# COVID Story 
+# WorldWide COVID Story 
 
 ![story](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/COVID%20Story%201%20.png)
 
