@@ -2,6 +2,24 @@
 
 This project uses the COVID-19 Cases.csv as the source dataset to create dashboards and stories in tableau.
 
+The dataset : COVID-19 Cases.csv
+Columns are as follows :
+* Date
+* Country_Region
+* Province_State
+* Case_Type
+* Cases
+* Difference
+* Latest_Date
+* Lat
+* Long
+
+The Case-Type includes :
+* Confirmed
+* Active
+* Deaths
+* Recovered
+
 All these vizs are based on the covid cases until March 22, 2020
 
 Below lists some of the visualisations.
