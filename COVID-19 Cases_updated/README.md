@@ -39,6 +39,8 @@ Below lists some of the visualisations.
 ![current](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Covid%20China.png)
 
 
+# Covid US
+
 ![us_covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Covid%20US.png)
 
 
