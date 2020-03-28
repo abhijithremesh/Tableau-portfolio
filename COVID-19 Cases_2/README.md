@@ -1,1 +1,30 @@
+# Tableau Viz based on COVID-19 Cases.csv
+
+This project uses the COVID-19 Cases.csv as the source dataset to create dashboards and stories in tableau.
+
+The dataset : COVID-19 Cases.csv
+Columns are as follows :
+* Case_Type
+* Cases
+* Difference
+* Table Name
+* Combined
+* Admin2
+* FIPS
+* Latest_Date
+* Long
+* Lat
+* Country_Region
+* Date
+* Province_State
+
+
+The Case-Type includes :
+* Confirmed
+* Deaths
+
+
+All these vizs are based on the covid cases until March 22, 2020
+
+Below lists some of the visualisations.
 
