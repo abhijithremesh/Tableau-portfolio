@@ -43,6 +43,11 @@ Below lists some of the visualisations.
 
 ![us_covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Covid%20US.png)
 
+# Country Specific COVID Cases
+
+![country-covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Country%20Specific%20COVID.png)
+
+
 
 
 
