@@ -27,3 +27,15 @@ The Case-Type includes :
 All these vizs are based on the covid cases until March 22, 2020
 
 Below lists some of the visualisations.
+
+# Current World Wide COVID status
+
+![current](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Current%20status.png)
+
+![current worldwide](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/WorldWide%20Covid.png)
+
+
+
+# Covid China
+
+
