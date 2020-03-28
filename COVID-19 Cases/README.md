@@ -4,11 +4,19 @@ This project uses the COVID-19 Cases.csv as the source dataset to create dashboa
 
 Below lists some of the visualisations.
 
+# Overview dashboard
+
 ![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases/tableau%20viz/images/Overview.png)
+
+# Cases vs Country dashboard
 
 ![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases/tableau%20viz/images/Cases%20vs%20Country.png)
 
+# World Wide Cases Map dashboard
+
 ![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases/tableau%20viz/images/Cases%20Map%20View.png)
+
+# Story
 
 ![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases/tableau%20viz/images/COVID-19%20Cases.png)
 
