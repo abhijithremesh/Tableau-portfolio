@@ -2,6 +2,8 @@
 
 This project uses the COVID-19 Cases.csv as the source dataset to create dashboards and stories in tableau.
 
+All these vizs are based on the covid cases until March 22, 2020
+
 Below lists some of the visualisations.
 
 # Overview dashboard
