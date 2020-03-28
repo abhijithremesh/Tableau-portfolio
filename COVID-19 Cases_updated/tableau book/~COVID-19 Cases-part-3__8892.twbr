@@ -1,0 +1,2581 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1211.1636                               -->
+<workbook source-build='2019.4.1 (20194.19.1211.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <CascadingFilters />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Top value ' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='5'>
+        <calculation class='tableau' formula='5' />
+      </column>
+      <column caption='Bottom' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='25.0'>
+        <calculation class='tableau' formula='25.0' />
+      </column>
+    </datasource>
+    <datasource caption='COVID-19 Cases _27.03' inline='true' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='COVID-19 Cases _27.03' name='textscan.0tngg2d1y9dqqi17cf7d70960o8o'>
+            <connection class='textscan' directory='F:/portfolio/Tableau-portfolio/COVID-19 Cases_updated/dataset' filename='COVID-19 Cases _27.03.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0tngg2d1y9dqqi17cf7d70960o8o' name='COVID-19 Cases _27.03.csv' table='[COVID-19 Cases _27.03#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Case_Type' ordinal='0' />
+            <column datatype='integer' name='Cases' ordinal='1' />
+            <column datatype='integer' name='Difference' ordinal='2' />
+            <column datatype='string' name='Table Names' ordinal='3' />
+            <column datatype='string' name='Combined_Key' ordinal='4' />
+            <column datatype='string' name='Admin2' ordinal='5' />
+            <column datatype='string' name='FIPS' ordinal='6' />
+            <column datatype='string' name='Prep_Flow_Runtime' ordinal='7' />
+            <column datatype='date' name='Latest_Date' ordinal='8' />
+            <column datatype='real' name='Long' ordinal='9' />
+            <column datatype='string' name='Country_Region' ordinal='10' />
+            <column datatype='date' name='Date' ordinal='11' />
+            <column datatype='string' name='Province_State' ordinal='12' />
+            <column datatype='real' name='Lat' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Case_Type]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Case_Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cases]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Cases</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Difference</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Difference]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Difference</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Names]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Table Names</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Combined_Key</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Combined_Key]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Combined_Key</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Admin2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Admin2]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Admin2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIPS]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>FIPS</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prep_Flow_Runtime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Prep_Flow_Runtime]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Prep_Flow_Runtime</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latest_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Latest_Date]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Latest_Date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Long</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Long]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Long</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country_Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country_Region]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Country_Region</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Province_State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Province_State]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Province_State</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lat]</local-name>
+            <parent-name>[COVID-19 Cases _27.03.csv]</parent-name>
+            <remote-alias>Lat</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' hidden='true' name='[Admin2]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Combined_Key]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='string' name='[Country_Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' hidden='true' name='[FIPS]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Long]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='None' datatype='string' name='[Province_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' hidden='true' name='[Table Names]' role='dimension' type='nominal' />
+      <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country_Region]' derivation='None' name='[none:Country_Region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Province_State]' derivation='None' name='[none:Province_State:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='Country_Region, Province_State'>
+          <field>[Country_Region]</field>
+          <field>[Province_State]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.430595' measure-ordering='alphabetic' measure-percentage='0.369688' parameter-percentage='0.199717' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country_Region:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kosovo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cruise Ship&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Gambia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;West Bank and Gaza&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cote d&apos;Ivoire&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;San Marino&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Congo (Kinshasa)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Saint Lucia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tanzania&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Andorra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cabo Verde&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dominica&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Congo (Brazzaville)&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Eswatini&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Syria&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Liechtenstein&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Saint Vincent and the Grenadines&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Korea, South&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Saint Kitts and Nevis&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Taiwan*&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Holy See&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Laos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Brunei&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Czechia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Case_Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Confirmed&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Deaths&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Province_State:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Aruba&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Guangxi&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jiangsu&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ningxia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;St Martin&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Faroe Islands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Greenland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Guangdong&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;West Virginia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Fujian&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mississippi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nova Scotia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sint Maarten&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wyoming&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Xinjiang&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;N/A&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Prince Edward Island&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bermuda&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cayman Islands&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;New Caledonia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Qinghai&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tianjin&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Australian Capital Territory&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Guadeloupe&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tasmania&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Alberta&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gansu&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Inner Mongolia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;South Australia&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Shandong&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Liaoning&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Martinique&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Saskatchewan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Macau&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mayotte&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;North Dakota&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Western Australia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hebei&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hunan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;New South Wales&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Victoria&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Iowa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Montana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Yunnan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Channel Islands&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Guizhou&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Quebec&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tibet&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Zhejiang&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;British Columbia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Chongqing&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hainan&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Queensland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Curacao&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Heilongjiang&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Manitoba&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Saint Barthelemy&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Virgin Islands&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hong Kong&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Shaanxi&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Guam&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hubei&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jilin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Northwest Territories&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shanxi&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Anhui&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Yukon&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Arkansas&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Gibraltar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Isle of Man&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Newfoundland and Labrador&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;South Dakota&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;French Guiana&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Henan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Idaho&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Montserrat&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Northern Territory&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Reunion&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Vermont&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Beijing&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;New Brunswick&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Jiangxi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alaska&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;French Polynesia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Shanghai&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sichuan&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Bottom COVID countries comparison'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tahoma'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bottom' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='25.0'>
+              <calculation class='tableau' formula='25.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+            <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cases]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='string' name='[Country_Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country_Region]' derivation='None' name='[none:Country_Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cases]' derivation='Sum' name='[sum:Cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]'>
+            <groupfilter function='member' level='[none:Case_Type:nk]' member='&quot;Deaths&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]'>
+            <groupfilter count='[Parameters].[Parameter 2]' end='bottom' function='end' units='records' user:ui-marker='end'>
+              <groupfilter direction='DESC' expression='SUM([Cases])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country_Region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' included-values='in-range'>
+            <min>#2020-01-22#</min>
+            <max>#2020-03-26#</max>
+          </filter>
+          <slices>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' value='Country'>
+              <formatted-text>
+                <run>Country</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Cases:qk]</rows>
+        <cols>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{5FD8E723-DB3E-47BB-8A0C-82A16592825E}' />
+    </worksheet>
+    <worksheet name='Bottom COVID state comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Bottom' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='25.0'>
+              <calculation class='tableau' formula='25.0' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+            <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cases]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column aggregation='None' datatype='string' name='[Province_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Province_State]' derivation='None' name='[none:Province_State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cases]' derivation='Sum' name='[sum:Cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]'>
+            <groupfilter function='member' level='[none:Case_Type:nk]' member='&quot;Deaths&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]'>
+            <groupfilter count='[Parameters].[Parameter 2]' end='bottom' function='end' units='records' user:ui-marker='end'>
+              <groupfilter direction='DESC' expression='SUM([Cases])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Province_State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Cases:qk]</rows>
+        <cols>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{AD940DC6-9F1E-4AD0-82CF-FE693EB51838}' />
+    </worksheet>
+    <worksheet name='Country specifc COVID Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+            <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='string' name='[Country_Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Difference]' role='measure' type='quantitative' />
+            <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country_Region]' derivation='None' name='[none:Country_Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Difference]' derivation='Sum' name='[sum:Difference:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Case_Type:nk]' member='&quot;Confirmed&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Country_Region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' filter-group='5' included-values='in-range'>
+            <min>#2020-02-02#</min>
+            <max>#2020-03-26#</max>
+          </filter>
+          <slices>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[Longitude (generated)]' field-type='quantitative' max='24343150.947885614' min='-24487185.965488393' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[Latitude (generated)]' field-type='quantitative' max='13201743.800211582' min='-13100311.457059052' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='3' />
+            <format attr='border-style' data-class='total' value='dotted' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' />
+              <size column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' />
+              <lod column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' />
+              <lod column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' />
+              <lod column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' />
+              <geometry column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Case_Type:&#9;</run>
+                <run bold='true'>&lt;[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Cases: &#9;</run>
+                <run bold='true'>&lt;[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run bold='true'>Country:&#9;&lt;[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-color' value='#b07aa1' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='185' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[Latitude (generated)]</rows>
+        <cols>([federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk] * [federated.09noa6q1bwuxu3120up8a0j1ea6b].[Longitude (generated)])</cols>
+      </table>
+      <simple-id uuid='{59868AF0-141D-4A45-B9A4-B672163553E5}' />
+    </worksheet>
+    <worksheet name='Country specific COVID  cases'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+            <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cases]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='string' name='[Country_Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country_Region]' derivation='None' name='[none:Country_Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cases]' derivation='Sum' name='[sum:Cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Case_Type:nk]' member='&quot;Confirmed&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' filter-group='4'>
+            <groupfilter function='level-members' level='[none:Country_Region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' filter-group='5' included-values='in-range'>
+            <min>#2020-02-02#</min>
+            <max>#2020-03-26#</max>
+          </filter>
+          <slices>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Cases:qk]</rows>
+        <cols>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{D109B9FE-E61F-4CB7-921D-1B3E3B13532C}' />
+    </worksheet>
+    <worksheet name='Top 5 COVID countries'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+            <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cases]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='string' name='[Country_Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country_Region]' derivation='None' name='[none:Country_Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cases]' derivation='Sum' name='[sum:Cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]'>
+            <groupfilter function='level-members' level='[none:Case_Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Cases])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country_Region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' included-values='in-range'>
+            <min>#2020-01-22#</min>
+            <max>#2020-03-24#</max>
+          </filter>
+          <slices>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk] * [federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Cases:qk])</rows>
+        <cols>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{73F4227F-BFF7-43A6-91E4-843D5D69CCB6}' />
+    </worksheet>
+    <worksheet name='Top COVID countries comparsion'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tahoma'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Top value ' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='5'>
+              <calculation class='tableau' formula='5' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+            <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cases]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='string' name='[Country_Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country_Region]' derivation='None' name='[none:Country_Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cases]' derivation='Sum' name='[sum:Cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]'>
+            <groupfilter function='member' level='[none:Case_Type:nk]' member='&quot;Deaths&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end'>
+              <groupfilter direction='DESC' expression='SUM([Cases])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country_Region:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' included-values='in-range'>
+            <min>#2020-01-22#</min>
+            <max>#2020-03-24#</max>
+          </filter>
+          <slices>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' value='Country'>
+              <formatted-text>
+                <run>Country</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' value='Case Type'>
+              <formatted-text>
+                <run fontname='Tahoma'>Case Type</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' value='Date'>
+              <formatted-text>
+                <run fontname='Tahoma'>Date</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='parameter-ctrl'>
+            <format attr='title' field='[Parameters].[Parameter 1]' value='Top'>
+              <formatted-text>
+                <run>Top</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Cases:qk]</rows>
+        <cols>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{A8BEF046-BE90-4639-A02B-F09EDFF551C5}' />
+    </worksheet>
+    <worksheet name='Top COVID state comparison'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Top value ' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='5'>
+              <calculation class='tableau' formula='5' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+            <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cases]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column aggregation='None' datatype='string' name='[Province_State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Province_State]' derivation='None' name='[none:Province_State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cases]' derivation='Sum' name='[sum:Cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day-Trunc' name='[tdy:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]'>
+            <groupfilter function='member' level='[none:Case_Type:nk]' member='&quot;Deaths&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' included-values='in-range'>
+            <min>#2020-01-22#</min>
+            <max>#2020-03-26#</max>
+          </filter>
+          <filter class='categorical' column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]'>
+            <groupfilter count='[Parameters].[Parameter 1]' end='top' function='end' units='records' user:ui-marker='end'>
+              <groupfilter direction='DESC' expression='SUM([Cases])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Province_State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]</column>
+            <column>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]' value='State'>
+              <formatted-text>
+                <run>State</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Cases:qk]</rows>
+        <cols>[federated.09noa6q1bwuxu3120up8a0j1ea6b].[tdy:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{5593DD96-E628-4D88-A205-EC2532E07B42}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='COVID Story 1 ' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Country specifc COVID cases' captured-sheet='Country Specific COVID' id='1' />
+                  <story-point caption='Top 5 COVID affected countries' captured-sheet='Top 5 COVID countries' id='2' />
+                  <story-point caption='Top / Bottom COVID affected countries' captured-sheet='Top &amp; Bottom COVID countries' id='3' />
+                  <story-point caption='Top / Bottom COVID  affected States' captured-sheet='Top &amp; Bottom COVID States' id='4' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{A97E6BA4-C3A2-4E6B-8AC9-7895BA306C1C}' />
+    </dashboard>
+    <dashboard name='Country Specific COVID'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+      </datasources>
+      <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+        <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+        <column aggregation='None' datatype='string' name='[Country_Region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Country_Region]' derivation='None' name='[none:Country_Region:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='80900' x='800' y='1000'>
+              <zone h='49000' id='3' name='Country specific COVID  cases' w='80900' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Country specifc COVID Map' w='80900' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='175' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='17500' x='81700' y='1000'>
+              <zone h='9125' id='8' name='Country specific COVID  cases' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='17500' x='81700' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7625' id='9' mode='checkdropdown' name='Country specific COVID  cases' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='17500' x='81700' y='10125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7625' id='10' mode='dropdown' name='Country specific COVID  cases' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' type='filter' values='cascading' w='17500' x='81700' y='17750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6375' id='11' name='Country specific COVID  cases' pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='color' w='17500' x='81700' y='25375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='11000' id='14' name='Country specifc COVID Map' pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' type='color' w='14000' x='83300' y='61750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='27' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9125' id='8' name='Country specific COVID  cases' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='17500' x='81700' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='9' mode='checkdropdown' name='Country specific COVID  cases' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='17500' x='81700' y='10125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='10' mode='dropdown' name='Country specific COVID  cases' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' type='filter' values='cascading' w='17500' x='81700' y='17750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Country specific COVID  cases' w='80900' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6375' id='11' name='Country specific COVID  cases' pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='color' w='17500' x='81700' y='25375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Country specifc COVID Map' w='80900' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11000' id='14' name='Country specifc COVID Map' pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' type='color' w='14000' x='83300' y='61750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A219331C-655F-48DE-9883-EE1BF75681EF}' />
+    </dashboard>
+    <dashboard name='Top &amp; Bottom COVID States'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Top value ' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='5'>
+          <calculation class='tableau' formula='5' />
+        </column>
+        <column caption='Bottom' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='25.0'>
+          <calculation class='tableau' formula='25.0' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+        <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Top COVID state comparison' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Bottom COVID state comparison' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='7625' id='8' mode='checkdropdown' name='Top COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='9' name='Top COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16000' x='83200' y='8625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16875' id='10' name='Top COVID state comparison' pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]' type='color' w='16000' x='83200' y='17750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7000' id='11' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='16000' x='83200' y='34625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7625' id='13' mode='checkdropdown' name='Bottom COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16800' x='83200' y='53500' />
+        <zone h='9125' id='14' name='Bottom COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16800' x='83200' y='60875' />
+        <zone h='6000' id='15' mode='type_in' param='[Parameters].[Parameter 2]' type='paramctrl' w='16000' x='83700' y='69000' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='28' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7625' id='8' mode='checkdropdown' name='Top COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='9' name='Top COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16000' x='83200' y='8625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Top COVID state comparison' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16875' id='10' name='Top COVID state comparison' pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]' type='color' w='16000' x='83200' y='17750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='11' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='16000' x='83200' y='34625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='13' mode='checkdropdown' name='Bottom COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16800' x='83200' y='53500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='14' name='Bottom COVID state comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16800' x='83200' y='60875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Bottom COVID state comparison' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6000' id='15' mode='type_in' param='[Parameters].[Parameter 2]' type='paramctrl' w='16000' x='83700' y='69000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8213C452-AB96-41C4-AFFB-78FFD75CF7C9}' />
+    </dashboard>
+    <dashboard name='Top &amp; Bottom COVID countries'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='COVID-19 Cases _27.03' name='federated.09noa6q1bwuxu3120up8a0j1ea6b' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Top value ' datatype='integer' name='[Parameter 1]' param-domain-type='any' role='measure' type='quantitative' value='5'>
+          <calculation class='tableau' formula='5' />
+        </column>
+        <column caption='Bottom' datatype='real' name='[Parameter 2]' param-domain-type='any' role='measure' type='quantitative' value='25.0'>
+          <calculation class='tableau' formula='25.0' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.09noa6q1bwuxu3120up8a0j1ea6b'>
+        <column datatype='string' name='[Case_Type]' role='dimension' type='nominal' />
+        <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+        <column-instance column='[Case_Type]' derivation='None' name='[none:Case_Type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Top COVID countries comparsion' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='12' name='Bottom COVID countries comparison' w='82400' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='7625' id='8' mode='checkdropdown' name='Top COVID countries comparsion' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='9' name='Top COVID countries comparsion' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16000' x='83200' y='8625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16875' id='10' name='Top COVID countries comparsion' pane-specification-id='2' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' type='color' w='16000' x='83200' y='17750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone custom-title='true' h='7000' id='11' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='16000' x='83200' y='34625'>
+                <formatted-text>
+                  <run>Top</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7625' id='13' mode='checkdropdown' name='Bottom COVID countries comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16800' x='83000' y='58750' />
+        <zone h='6000' id='15' mode='type_in' param='[Parameters].[Parameter 2]' type='paramctrl' w='16000' x='83600' y='76125' />
+        <zone h='9125' id='14' name='Bottom COVID countries comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16800' x='83100' y='66500' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='28' param='vert' type='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='7625' id='8' mode='checkdropdown' name='Top COVID countries comparsion' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='9' name='Top COVID countries comparsion' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16000' x='83200' y='8625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Top COVID countries comparsion' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16875' id='10' name='Top COVID countries comparsion' pane-specification-id='2' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' type='color' w='16000' x='83200' y='17750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='7000' id='11' mode='type_in' param='[Parameters].[Parameter 1]' type='paramctrl' w='16000' x='83200' y='34625'>
+                  <formatted-text>
+                    <run>Top</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7625' id='13' mode='checkdropdown' name='Bottom COVID countries comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' w='16800' x='83000' y='58750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='14' name='Bottom COVID countries comparison' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='16800' x='83100' y='66500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='12' is-fixed='true' name='Bottom COVID countries comparison' w='82400' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6000' id='15' mode='type_in' param='[Parameters].[Parameter 2]' type='paramctrl' w='16000' x='83600' y='76125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FFAC7542-5939-41F1-8FF9-77B2565C91CA}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Country specific COVID  cases'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' type='filter' values='cascading' />
+            <card pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66A2DB04-BD70-484C-B37F-94D2D44CC6C2}' />
+    </window>
+    <window class='worksheet' name='Country specifc COVID Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[sum:Difference:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EEAEFBA1-FE43-4A28-BC59-92CC780EB61F}' />
+    </window>
+    <window class='dashboard' name='Country Specific COVID'>
+      <viewpoints>
+        <viewpoint name='Country specifc COVID Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Country specific COVID  cases'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4DFA0E2B-DA4E-42B0-A55E-957BC94BB420}' />
+    </window>
+    <window class='worksheet' name='Top 5 COVID countries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='checkdropdown' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB0DF2ED-1760-4C74-9150-984B9B7089F1}' />
+    </window>
+    <window class='worksheet' name='Top COVID countries comparsion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' />
+            <card param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' type='color' />
+            <card custom-title='true' mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{09FF959E-ABFE-4A09-B81A-B17222A27BBA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Bottom COVID countries comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' />
+            <card param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Country_Region:nk]' type='color' />
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B44F9D8C-434C-466B-9E32-FADF1A2B0547}' />
+    </window>
+    <window class='dashboard' name='Top &amp; Bottom COVID countries'>
+      <viewpoints>
+        <viewpoint name='Bottom COVID countries comparison'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top COVID countries comparsion'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F772CB2E-8690-423A-AB24-B34A07005E3A}' />
+    </window>
+    <window class='worksheet' name='Top COVID state comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' />
+            <card param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='type_in' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Province_State:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A66F054D-0B22-4E3A-9636-BAE12F69B734}' />
+    </window>
+    <window class='worksheet' name='Bottom COVID state comparison'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Case_Type:nk]' type='filter' />
+            <card param='[federated.09noa6q1bwuxu3120up8a0j1ea6b].[none:Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='type_in' param='[Parameters].[Parameter 2]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{871BBD4C-AB53-405A-BBCF-8582C10B3422}' />
+    </window>
+    <window class='dashboard' name='Top &amp; Bottom COVID States'>
+      <viewpoints>
+        <viewpoint name='Bottom COVID state comparison'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top COVID state comparison'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{65DE9501-7F61-4E65-8D8C-B6E5599C00E4}' />
+    </window>
+    <window class='dashboard' name='COVID Story 1 '>
+      <viewpoints />
+      <active id='6' />
+      <simple-id uuid='{5A040806-E582-44F9-901C-610025377A77}' />
+    </window>
+  </windows>
+</workbook>
