@@ -34,8 +34,13 @@ Below lists some of the visualisations.
 
 ![current worldwide](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/WorldWide%20Covid.png)
 
-
-
 # Covid China
+
+![current](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Covid%20China.png)
+
+
+![us_covid](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/COVID-19%20Cases_updated/tableau%20vizs/images/Covid%20US.png)
+
+
 
 
