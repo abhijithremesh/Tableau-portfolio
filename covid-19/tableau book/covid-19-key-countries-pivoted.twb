@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1211.1636                               -->
+<workbook original-version='18.1' source-build='2019.4.1 (20194.19.1211.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ISO8601PeriodTypes predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='key-countries-pivoted' inline='true' name='federated.17gdopv0i6jnah11kxe880463gcc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='key-countries-pivoted' name='textscan.0e56elv0uygg1n1gn5efe0hf8db1'>
+            <connection class='textscan' directory='F:/portfolio/Tableau-portfolio/covid-19/dataset' filename='key-countries-pivoted.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0e56elv0uygg1n1gn5efe0hf8db1' name='key-countries-pivoted.csv' table='[key-countries-pivoted#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='China' ordinal='1' />
+            <column datatype='integer' name='US' ordinal='2' />
+            <column datatype='integer' name='United_Kingdom' ordinal='3' />
+            <column datatype='integer' name='Italy' ordinal='4' />
+            <column datatype='integer' name='France' ordinal='5' />
+            <column datatype='integer' name='Germany' ordinal='6' />
+            <column datatype='integer' name='Spain' ordinal='7' />
+            <column datatype='integer' name='Iran' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>China</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[China]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>China</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>US</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[US]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>US</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>United_Kingdom</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[United_Kingdom]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>United_Kingdom</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Italy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Italy]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>Italy</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>France</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[France]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>France</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Germany</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Germany]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>Germany</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Spain</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Spain]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>Spain</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Iran</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Iran]</local-name>
+            <parent-name>[key-countries-pivoted.csv]</parent-name>
+            <remote-alias>Iran</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[China]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[France]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Germany]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[US]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[United_Kingdom]' role='measure' type='quantitative' />
+      <column-instance column='[China]' derivation='Sum' name='[sum:China:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[France]' derivation='Sum' name='[sum:France:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Germany]' derivation='Sum' name='[sum:Germany:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[US]' derivation='Sum' name='[sum:US:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[United_Kingdom]' derivation='Sum' name='[sum:United_Kingdom:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.360434' measure-ordering='alphabetic' measure-percentage='0.639566' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:US:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[usr:Calculation_1405686069598130178:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[usr:Calculation_1405686069598371845:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:China:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[usr:Calculation_1405686069597949952:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:France:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Germany:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[usr:Calculation_1405686069598273540:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[usr:Calculation_1405686069598199811:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:United_Kingdom:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.17gdopv0i6jnah11kxe880463gcc].[usr:Calculation_1405686069598031873:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='COVID cases '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='key-countries-pivoted' name='federated.17gdopv0i6jnah11kxe880463gcc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17gdopv0i6jnah11kxe880463gcc'>
+            <column datatype='integer' name='[China]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[France]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Germany]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Iran]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Italy]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Spain]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[US]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[United_Kingdom]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[China]' derivation='Sum' name='[sum:China:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[France]' derivation='Sum' name='[sum:France:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Germany]' derivation='Sum' name='[sum:Germany:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Iran]' derivation='Sum' name='[sum:Iran:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Italy]' derivation='Sum' name='[sum:Italy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Spain]' derivation='Sum' name='[sum:Spain:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[US]' derivation='Sum' name='[sum:US:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[United_Kingdom]' derivation='Sum' name='[sum:United_Kingdom:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='relative-date' column='[federated.17gdopv0i6jnah11kxe880463gcc].[none:Date:qk]' first-period='-1' include-future='true' include-null='false' last-period='-1' period-type='day' period-type-v2='day' />
+          <slices>
+            <column>[federated.17gdopv0i6jnah11kxe880463gcc].[none:Date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='vertical-align' data-class='subtotal' value='bottom' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:China:qk]' />
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:France:qk]' />
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Germany:qk]' />
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Iran:qk]' />
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Italy:qk]' />
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Spain:qk]' />
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:United_Kingdom:qk]' />
+              <text column='[federated.17gdopv0i6jnah11kxe880463gcc].[sum:US:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Trebuchet MS' fontsize='20'>COVID key countries total cases stats</run>
+                <run>Æ&#10;&#10;&#10;</run>
+                <run fontcolor='#aa0000' fontname='Trebuchet MS' fontsize='15'>China : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:China:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#00007f' fontname='Trebuchet MS' fontsize='15'>France : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:France:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#333333' fontname='Trebuchet MS' fontsize='15'>Germany : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Germany:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#005500' fontname='Trebuchet MS' fontsize='15'>Iran : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Iran:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#00557f' fontname='Trebuchet MS' fontsize='15'>Italy : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Italy:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#f28e2b' fontname='Trebuchet MS' fontsize='15'>Spain : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:Spain:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#1933c6' fontname='Trebuchet MS' fontsize='15'>UK : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:United_Kingdom:qk]&gt;</run>
+                <run>Æ&#10;&#10;</run>
+                <run fontcolor='#aa007f' fontname='Trebuchet MS' fontsize='15'>US : &lt;[federated.17gdopv0i6jnah11kxe880463gcc].[sum:US:qk]&gt;</run>
+                <run fontcolor='#aa007f' fontname='Trebuchet MS' fontsize='15'>Æ&#10;</run>
+                <run fontcolor='#aa007f' fontname='Trebuchet MS' fontsize='15'>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F6825F6A-421E-4127-9361-5FF92B7CA492}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='COVID cases '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17gdopv0i6jnah11kxe880463gcc].[none:Date:qk]</field>
+            <field>[federated.17gdopv0i6jnah11kxe880463gcc].[tdy:Date:qk]</field>
+            <field>[federated.17gdopv0i6jnah11kxe880463gcc].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A72584FD-7FAC-45D0-B2DD-5773643EDD1E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='COVID cases ' width='192'>
+      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
+      wn3xpQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
