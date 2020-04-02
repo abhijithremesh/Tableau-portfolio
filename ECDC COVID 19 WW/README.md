@@ -2,6 +2,8 @@
 
 The dataset used is COVID-19-geographic-disbtribution-worldwide.csv
 
+The dataset is available and can be refreshed at https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide.
+
 The columns includes
 * dateRep
 * day
