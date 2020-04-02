@@ -43,3 +43,5 @@ Below lists some of the visualisations.
 # Top 5 COVID affected Countries ranked as Bar Graphs
 
 ![alt-text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/covid-19/tableau%20viz/images/Current%20Top%205%20Rank%20countries.png)
+
+![alt-text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/covid-19/tableau%20viz/images/Current%20COVID%20map.png)
