@@ -17,21 +17,25 @@ All these vizs are based on the covid cases until April 4,2020.
 
 Below lists the visualisations.
 
-# COVID affetced countries as packed bubbles
+# Worldwide COVID metrics stats 
 
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019%20WW/tableau%20viz/images/COVID%20countries.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019/tableau%20viz/images/WW%20covid%20metrics.png)
 
-# COVID affected countries as pie charts
+# Worldwide COVID metrics stats by country
 
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019%20WW/tableau%20viz/images/COVID%20pie%20charts.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019/tableau%20viz/images/TotalNew%20Covid.png)
 
-# COVID affected countries as rankings
+# Rank of Countries by COVID cases
 
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019%20WW/tableau%20viz/images/COVID%20Top%20deaths%20vs%20cases.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019/tableau%20viz/images/Top%20Rank%20Cases.png)
+
+# Rank of Countries by COVID deaths
+
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019/tableau%20viz/images/Top%20Rank%20Deaths.png)
 
 # COVID affected countries Story
 
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019%20WW/tableau%20viz/images/COVID%20affected%20countries.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/ECDC%20COVID%2019/tableau%20viz/images/ECDC%20COVID%2019.png)
 
 
 
