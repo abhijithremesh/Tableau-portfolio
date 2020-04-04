@@ -3,6 +3,9 @@
 This project uses the COVID-19 Cases.csv as the source dataset to create dashboards and stories in tableau.
 
 The dataset : COVID-19 Cases.csv
+
+The dataset is available at https://data.world/covid-19-data-resource-hub/covid-19-case-counts.
+
 Columns are as follows :
 * Case_Type
 * Cases
