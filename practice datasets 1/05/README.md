@@ -13,7 +13,7 @@ The dataset contains columns like
 Below lists some of the visualisations.
 
 # UK Bike Industry trend over time
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/03/by-country.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/05/UK%20Bike%20Industry.png)
 
 
 
