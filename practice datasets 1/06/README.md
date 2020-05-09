@@ -1,4 +1,4 @@
-#  Tableau Vizs. for UK Bike industry dataset
+#  Tableau Vizs. for US State Wind Energy Facts 2018
 
 This project uses the below datasets to create dashboards and stories in tableau.
 
