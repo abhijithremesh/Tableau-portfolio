@@ -4,7 +4,7 @@ This project uses the below datasets to create dashboards and stories in tableau
 
 * US-State-Wind-Energy-Facts-2018
 
-The dataset contains columns like
+The dataset contains columns as follows :
 * Ranking
 * States
 * Installed Capacity
