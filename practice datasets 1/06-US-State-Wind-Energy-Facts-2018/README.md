@@ -36,6 +36,10 @@ Below lists some of the visualisations.
 # Current scenerio
 ![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/06-US-State-Wind-Energy-Facts-2018/Status%20db.png)
 
+# A Story
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/06-US-State-Wind-Energy-Facts-2018/Story%20US%20State%20Wind%20Energy.png)
+
+
 
 
 
