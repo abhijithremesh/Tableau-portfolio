@@ -10,17 +10,17 @@ All these vizs are based on the covid cases until March 22, 2020
 Below lists some of the visualisations.
 
 # Bear deaths trend over the years by type of bear
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02/Deaths-by-type-type-of-bear.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02-North-america-bear-killings/Deaths-by-type-type-of-bear.png)
 
 # Bear deaths by gender criteria
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02/Deaths-by-gender.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02-North-america-bear-killings/Deaths-by-gender.png)
 
 # Top vulnerable states in North America with bear deaths
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02/Top-vulnerable-deaths.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02-North-america-bear-killings/Top-vulnerable-deaths.png)
 
 # Bear Death Distribution on the bases of age groups
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02/Death-distribution-by-age.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02-North-america-bear-killings/Death-distribution-by-age.png)
 
 # The Whole North America Bear Killings Story
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02/North-America-Bear-Killings-Story.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/02-North-america-bear-killings/North-America-Bear-Killings-Story.png)
 
