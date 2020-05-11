@@ -7,12 +7,12 @@ This project uses the below datasets to create dashboards and stories in tableau
 
 Below lists some of the visualisations.
 
-# Indiactors trend based on country
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/03/by-country.png)
+# Indicators trend based on country
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/03-DESI/by-country.png)
 
 # Countries based on indiactors
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/03/by-indicators.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/03-DESI/by-indicators.png)
 
 # Top countries at each indicator level
-![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/03/top-countries-indcators.png)
+![alt text](https://github.com/abhijithremesh/Tableau-portfolio/blob/master/practice%20datasets%201/03-DESI/top-countries-indcators.png)
 
